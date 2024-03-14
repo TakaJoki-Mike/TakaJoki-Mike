@@ -1,0 +1,1580 @@
+{
+	"info": {
+		"_postman_id": "aacef0f1-e3c6-404f-8df9-a1cfc96c0900",
+		"name": "API coure work",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28399339"
+	},
+	"item": [
+		{
+			"name": "Создание события 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var key = \"eventId\"\r",
+							"var value = pm.response.json().data.payload.id\r",
+							"pm.collectionVariables.set(key, value);\r",
+							"var key = \"StartAt\"\r",
+							"var value = pm.response.json().data.startAt\r",
+							"pm.collectionVariables.set(key, value);\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api-teachers.skyeng.ru"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "cookie",
+						"value": "{{Token}}"
+					},
+					{
+						"key": "origin",
+						"value": "https://teachers.skyeng.ru"
+					},
+					{
+						"key": "referer",
+						"value": "https://teachers.skyeng.ru/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not/A)Brand\";v=\"99\", \"Microsoft Edge\";v=\"115\", \"Chromium\";v=\"115\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.203"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"backgroundColor\": \"#43B658\",\r\n    \"color\": \"#D478F1\",\r\n    \"description\": \"sdfsadf\",\r\n    \"title\": \"Валера\",\r\n    \"startAt\": \"2023-08-22T12:00:00+03:00\",\r\n    \"endAt\": \"2023-08-22T12:10:00+03:00\"\r\n}"
+				},
+				"url": {
+					"raw": "{{URL}}/createPersonal",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"createPersonal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Редактирование всех параметров события сразу 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var key = \"eventId\"\r",
+							"var value = pm.response.json().data.payload.id\r",
+							"pm.collectionVariables.set(key, value);\r",
+							"var key = \"StartAt\"\r",
+							"var value = pm.response.json().data.startAt\r",
+							"pm.collectionVariables.set(key, value);\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api-teachers.skyeng.ru"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "cookie",
+						"value": "{{Token}}"
+					},
+					{
+						"key": "origin",
+						"value": "https://teachers.skyeng.ru"
+					},
+					{
+						"key": "referer",
+						"value": "https://teachers.skyeng.ru/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not/A)Brand\";v=\"99\", \"Microsoft Edge\";v=\"115\", \"Chromium\";v=\"115\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.203"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"backgroundColor\": \"#F9EBFF\",\r\n    \"color\": \"#81888D\",\r\n    \"description\": \"https://skyengpublic.notion.site/1-cd209a4dbeef4ccf9f8b9449b20eb497\",\r\n    \"title\": \"Олеж1Олеж1Олеж1Олеж1Олеж1Олеж1Олеж1Олеж1\",\r\n    \"startAt\": \"2023-08-29T00:10:00+03:00\",\r\n    \"endAt\": \"2023-08-29T23:50:00+03:00\",\r\n    \"id\": {{eventId}},\r\n    \"oldStartAt\": \"{{StartAt}}\"\r\n}"
+				},
+				"url": {
+					"raw": "{{URL}}/updatePersonal",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"updatePersonal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Отображение событий в расписании 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api-teachers.skyeng.ru"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "cookie",
+						"value": "{{Token}}"
+					},
+					{
+						"key": "origin",
+						"value": "https://teachers.skyeng.ru"
+					},
+					{
+						"key": "referer",
+						"value": "https://teachers.skyeng.ru/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not/A)Brand\";v=\"99\", \"Microsoft Edge\";v=\"115\", \"Chromium\";v=\"115\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.203"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"from\":\"2023-08-21T00:00:00+03:00\",\"till\":\"2023-08-28T00:00:00+03:00\",\"onlyTypes\":[]}"
+				},
+				"url": {
+					"raw": "{{URL}}/events",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Удаления события 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api-teachers.skyeng.ru"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "cookie",
+						"value": "{{Token}}"
+					},
+					{
+						"key": "origin",
+						"value": "https://teachers.skyeng.ru"
+					},
+					{
+						"key": "referer",
+						"value": "https://teachers.skyeng.ru/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not/A)Brand\";v=\"99\", \"Microsoft Edge\";v=\"115\", \"Chromium\";v=\"115\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.203"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": {{eventId}},\r\n    \"startAt\": \"{{StartAt}}\"\r\n}"
+				},
+				"url": {
+					"raw": "{{URL}}/removePersonal",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"removePersonal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Создание события 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var key = \"eventId\"\r",
+							"var value = pm.response.json().data.payload.id\r",
+							"pm.collectionVariables.set(key, value);\r",
+							"var key = \"StartAt\"\r",
+							"var value = pm.response.json().data.startAt\r",
+							"pm.collectionVariables.set(key, value);\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api-teachers.skyeng.ru"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "cookie",
+						"value": "{{Token}}"
+					},
+					{
+						"key": "origin",
+						"value": "https://teachers.skyeng.ru"
+					},
+					{
+						"key": "referer",
+						"value": "https://teachers.skyeng.ru/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not/A)Brand\";v=\"99\", \"Microsoft Edge\";v=\"115\", \"Chromium\";v=\"115\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.203"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"backgroundColor\": \"#81888D\",\r\n    \"color\": \"#81888D\",\r\n    \"description\": \"12\",\r\n    \"title\": \"a\",\r\n    \"startAt\": \"2023-08-23T22:00:00+03:00\",\r\n    \"endAt\": \"2023-08-23T23:00:00+03:00\"\r\n}"
+				},
+				"url": {
+					"raw": "{{URL}}/createPersonal",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"createPersonal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Редактирование без изменений 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var key = \"eventId\"\r",
+							"var value = pm.response.json().data.payload.id\r",
+							"pm.collectionVariables.set(key, value);\r",
+							"var key = \"StartAt\"\r",
+							"var value = pm.response.json().data.startAt\r",
+							"pm.collectionVariables.set(key, value);\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api-teachers.skyeng.ru"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "cookie",
+						"value": "{{Token}}"
+					},
+					{
+						"key": "origin",
+						"value": "https://teachers.skyeng.ru"
+					},
+					{
+						"key": "referer",
+						"value": "https://teachers.skyeng.ru/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not/A)Brand\";v=\"99\", \"Microsoft Edge\";v=\"115\", \"Chromium\";v=\"115\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.203"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"backgroundColor\": \"#43B658\",\r\n    \"color\": \"#FAC641\",\r\n    \"description\": \"12\",\r\n    \"title\": \"a\",\r\n    \"startAt\": \"2023-08-23T22:00:00+03:00\",\r\n    \"endAt\": \"2023-08-23T23:00:00+03:00\",\r\n    \"id\": {{eventId}},\r\n    \"oldStartAt\": \"{{StartAt}}\"\r\n}"
+				},
+				"url": {
+					"raw": "{{URL}}/updatePersonal",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"updatePersonal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Редактирование названия события 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var key = \"eventId\"\r",
+							"var value = pm.response.json().data.payload.id\r",
+							"pm.collectionVariables.set(key, value);\r",
+							"var key = \"StartAt\"\r",
+							"var value = pm.response.json().data.startAt\r",
+							"pm.collectionVariables.set(key, value);\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api-teachers.skyeng.ru"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "cookie",
+						"value": "{{Token}}"
+					},
+					{
+						"key": "origin",
+						"value": "https://teachers.skyeng.ru"
+					},
+					{
+						"key": "referer",
+						"value": "https://teachers.skyeng.ru/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not/A)Brand\";v=\"99\", \"Microsoft Edge\";v=\"115\", \"Chromium\";v=\"115\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.203"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"backgroundColor\": \"#43B658\",\r\n    \"color\": \"#FAC641\",\r\n    \"description\": \"12\",\r\n    \"title\": \"\",\r\n    \"startAt\": \"2023-08-23T22:00:00+03:00\",\r\n    \"endAt\": \"2023-08-23T23:00:00+03:00\",\r\n    \"id\": {{eventId}},\r\n    \"oldStartAt\": \"{{StartAt}}\"\r\n}"
+				},
+				"url": {
+					"raw": "{{URL}}/updatePersonal",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"updatePersonal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Редактирование даты события 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var key = \"eventId\"\r",
+							"var value = pm.response.json().data.payload.id\r",
+							"pm.collectionVariables.set(key, value);\r",
+							"var key = \"StartAt\"\r",
+							"var value = pm.response.json().data.startAt\r",
+							"pm.collectionVariables.set(key, value);\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api-teachers.skyeng.ru"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "cookie",
+						"value": "{{Token}}"
+					},
+					{
+						"key": "origin",
+						"value": "https://teachers.skyeng.ru"
+					},
+					{
+						"key": "referer",
+						"value": "https://teachers.skyeng.ru/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not/A)Brand\";v=\"99\", \"Microsoft Edge\";v=\"115\", \"Chromium\";v=\"115\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.203"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"backgroundColor\": \"#43B658\",\r\n    \"color\": \"#FAC641\",\r\n    \"description\": \"12\",\r\n    \"title\": \"а\",\r\n    \"startAt\": \"2023-08-21T22:00:00+03:00\",\r\n    \"endAt\": \"2023-08-21T23:00:00+03:00\",\r\n    \"id\": {{eventId}},\r\n    \"oldStartAt\": \"{{StartAt}}\"\r\n}"
+				},
+				"url": {
+					"raw": "{{URL}}/updatePersonal",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"updatePersonal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Редактирование описания события 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var key = \"eventId\"\r",
+							"var value = pm.response.json().data.payload.id\r",
+							"pm.collectionVariables.set(key, value);\r",
+							"var key = \"StartAt\"\r",
+							"var value = pm.response.json().data.startAt\r",
+							"pm.collectionVariables.set(key, value);\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api-teachers.skyeng.ru"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "cookie",
+						"value": "{{Token}}"
+					},
+					{
+						"key": "origin",
+						"value": "https://teachers.skyeng.ru"
+					},
+					{
+						"key": "referer",
+						"value": "https://teachers.skyeng.ru/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not/A)Brand\";v=\"99\", \"Microsoft Edge\";v=\"115\", \"Chromium\";v=\"115\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.203"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"backgroundColor\": \"#43B658\",\r\n    \"color\": \"#FAC641\",\r\n    \"description\": \"\",\r\n    \"title\": \"а\",\r\n    \"startAt\": \"2023-08-21T22:00:00+03:00\",\r\n    \"endAt\": \"2023-08-21T23:00:00+03:00\",\r\n    \"id\": {{eventId}},\r\n    \"oldStartAt\": \"{{StartAt}}\"\r\n}"
+				},
+				"url": {
+					"raw": "{{URL}}/updatePersonal",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"updatePersonal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Редактирование цвета события 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var key = \"eventId\"\r",
+							"var value = pm.response.json().data.payload.id\r",
+							"pm.collectionVariables.set(key, value);\r",
+							"var key = \"StartAt\"\r",
+							"var value = pm.response.json().data.startAt\r",
+							"pm.collectionVariables.set(key, value);\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api-teachers.skyeng.ru"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "cookie",
+						"value": "{{Token}}"
+					},
+					{
+						"key": "origin",
+						"value": "https://teachers.skyeng.ru"
+					},
+					{
+						"key": "referer",
+						"value": "https://teachers.skyeng.ru/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not/A)Brand\";v=\"99\", \"Microsoft Edge\";v=\"115\", \"Chromium\";v=\"115\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.203"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"backgroundColor\": \"#43B658\",\r\n    \"color\": \"#43B658\",\r\n    \"description\": \"\",\r\n    \"title\": \"а\",\r\n    \"startAt\": \"2023-08-21T22:00:00+03:00\",\r\n    \"endAt\": \"2023-08-21T23:00:00+03:00\",\r\n    \"id\": {{eventId}},\r\n    \"oldStartAt\": \"{{StartAt}}\"\r\n}"
+				},
+				"url": {
+					"raw": "{{URL}}/updatePersonal",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"updatePersonal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Удаления события 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api-teachers.skyeng.ru"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "cookie",
+						"value": "{{Token}}"
+					},
+					{
+						"key": "origin",
+						"value": "https://teachers.skyeng.ru"
+					},
+					{
+						"key": "referer",
+						"value": "https://teachers.skyeng.ru/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not/A)Brand\";v=\"99\", \"Microsoft Edge\";v=\"115\", \"Chromium\";v=\"115\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.203"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": {{eventId}},\r\n    \"startAt\": \"{{StartAt}}\"\r\n}"
+				},
+				"url": {
+					"raw": "{{URL}}/removePersonal",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"removePersonal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Создание события 3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var key = \"eventId\"\r",
+							"var value = pm.response.json().data.payload.id\r",
+							"pm.collectionVariables.set(key, value);\r",
+							"var key = \"StartAt\"\r",
+							"var value = pm.response.json().data.startAt\r",
+							"pm.collectionVariables.set(key, value);\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api-teachers.skyeng.ru"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "cookie",
+						"value": "{{Token}}"
+					},
+					{
+						"key": "origin",
+						"value": "https://teachers.skyeng.ru"
+					},
+					{
+						"key": "referer",
+						"value": "https://teachers.skyeng.ru/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not/A)Brand\";v=\"99\", \"Microsoft Edge\";v=\"115\", \"Chromium\";v=\"115\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.203"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"backgroundColor\": \"#81888D\",\r\n    \"color\": \"#81888D\",\r\n    \"description\": \"654\",\r\n    \"title\": \"Gleb\",\r\n    \"startAt\": \"2023-08-23T12:50:00+03:00\",\r\n    \"endAt\": \"2023-08-23T13:00:00+03:00\"\r\n}"
+				},
+				"url": {
+					"raw": "{{URL}}/createPersonal",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"createPersonal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Редактирование времени события 3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var key = \"eventId\"\r",
+							"var value = pm.response.json().data.payload.id\r",
+							"pm.collectionVariables.set(key, value);\r",
+							"var key = \"StartAt\"\r",
+							"var value = pm.response.json().data.startAt\r",
+							"pm.collectionVariables.set(key, value);\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api-teachers.skyeng.ru"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "cookie",
+						"value": "{{Token}}"
+					},
+					{
+						"key": "origin",
+						"value": "https://teachers.skyeng.ru"
+					},
+					{
+						"key": "referer",
+						"value": "https://teachers.skyeng.ru/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not/A)Brand\";v=\"99\", \"Microsoft Edge\";v=\"115\", \"Chromium\";v=\"115\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.203"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"backgroundColor\": \"#43B658\",\r\n    \"color\": \"#81888D\",\r\n    \"description\": \"654\",\r\n    \"title\": \"Gleb\",\r\n    \"startAt\": \"2023-08-23T61:61:00+03:00\",\r\n    \"endAt\": \"2023-08-23T23:00:00+03:00\",\r\n    \"id\": {{eventId}},\r\n    \"oldStartAt\": \"{{StartAt}}\"\r\n}"
+				},
+				"url": {
+					"raw": "{{URL}}/updatePersonal",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"updatePersonal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Редактирование даты события 3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var key = \"eventId\"\r",
+							"var value = pm.response.json().data.payload.id\r",
+							"pm.collectionVariables.set(key, value);\r",
+							"var key = \"StartAt\"\r",
+							"var value = pm.response.json().data.startAt\r",
+							"pm.collectionVariables.set(key, value);\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api-teachers.skyeng.ru"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "cookie",
+						"value": "{{Token}}"
+					},
+					{
+						"key": "origin",
+						"value": "https://teachers.skyeng.ru"
+					},
+					{
+						"key": "referer",
+						"value": "https://teachers.skyeng.ru/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not/A)Brand\";v=\"99\", \"Microsoft Edge\";v=\"115\", \"Chromium\";v=\"115\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.203"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"backgroundColor\": \"#43B658\",\r\n    \"color\": \"#81888D\",\r\n    \"description\": \"654\",\r\n    \"title\": \"Gleb\",\r\n    \"startAt\": \"3535-35-35T12:50:00+03:00\",\r\n    \"endAt\": \"2023-08-23T13:00:00+03:00\",\r\n    \"id\": {{eventId}},\r\n    \"oldStartAt\": \"{{StartAt}}\"\r\n}"
+				},
+				"url": {
+					"raw": "{{URL}}/updatePersonal",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"updatePersonal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Редактирование цвета события 3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var key = \"eventId\"\r",
+							"var value = pm.response.json().data.payload.id\r",
+							"pm.collectionVariables.set(key, value);\r",
+							"var key = \"StartAt\"\r",
+							"var value = pm.response.json().data.startAt\r",
+							"pm.collectionVariables.set(key, value);\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api-teachers.skyeng.ru"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "cookie",
+						"value": "{{Token}}"
+					},
+					{
+						"key": "origin",
+						"value": "https://teachers.skyeng.ru"
+					},
+					{
+						"key": "referer",
+						"value": "https://teachers.skyeng.ru/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not/A)Brand\";v=\"99\", \"Microsoft Edge\";v=\"115\", \"Chromium\";v=\"115\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.203"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"backgroundColor\": \"#121654\",\r\n    \"color\": \"#121654\",\r\n    \"description\": \"654\",\r\n    \"title\": \"Gleb\",\r\n    \"startAt\": \"2023-08-23T12:50:00+03:00\",\r\n    \"endAt\": \"2023-08-23T13:00:00+03:00\",\r\n    \"id\": {{eventId}},\r\n    \"oldStartAt\": \"{{StartAt}}\"\r\n}"
+				},
+				"url": {
+					"raw": "{{URL}}/updatePersonal",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"updatePersonal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Удаления события 3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api-teachers.skyeng.ru"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "cookie",
+						"value": "{{Token}}"
+					},
+					{
+						"key": "origin",
+						"value": "https://teachers.skyeng.ru"
+					},
+					{
+						"key": "referer",
+						"value": "https://teachers.skyeng.ru/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not/A)Brand\";v=\"99\", \"Microsoft Edge\";v=\"115\", \"Chromium\";v=\"115\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.203"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": {{eventId}},\r\n    \"startAt\": \"{{StartAt}}\"\r\n}"
+				},
+				"url": {
+					"raw": "{{URL}}/removePersonal",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"removePersonal"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "eventId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "StartAt",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "URL",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "Token",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
