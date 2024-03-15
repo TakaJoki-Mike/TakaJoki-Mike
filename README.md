@@ -59,6 +59,8 @@ As a result of the project, the following outcomes were achieved: All events wer
 
 <b>Diplom work</b> [in Notion](https://wheat-cruiser-95c.notion.site/61079ca3cabd46f89f05d8e20e6e87c6?pvs=4)
 
+<b>Some interesting cases</b>[in Notion](https://wheat-cruiser-95c.notion.site/e88576059d814a0291a6d85cce462c71?pvs=4)
+
 ### Below is a list of the technologies and programs that I have worked with:
 
 `Jira`, `qase.io`, `Postman`, `Swagger`, `sitechco`, `Confluence`,
