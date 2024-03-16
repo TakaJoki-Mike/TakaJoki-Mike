@@ -63,8 +63,8 @@ As a result of the project, the following outcomes were achieved: All events wer
 
 ### Below is a list of the technologies and programs that I have worked with:
 
-`Jira`, `qase.io`, `Postman`, `Swagger`, `sitechco`, `Confluence`,
-`SoapUI`, `VS code`, `Git`, `Edge DevTools`, `pgAdmin`, `Mockoon`.
+`Jira`, `qase.io`, `Postman`, `Swagger`, `Sitechco`, `Confluence`, `Chrome/Edge DevTools`,   
+`SoapUI`, `VS code`, `Git`, `pgAdmin`, `Mockoon`, `Android Studio`, `Charles`, `Notion`.
 
 
 ### Contact Information:
