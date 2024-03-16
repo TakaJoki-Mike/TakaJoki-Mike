@@ -69,5 +69,5 @@ As a result of the project, the following outcomes were achieved: All events wer
 
 ### Contact Information:
 
-[![Telegram Badge](https://img.shields.io/badge/-Mike_Smirnov-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/TakaJoki_Mike/)
+[![Telegram Badge](https://img.shields.io/badge/-TakaJoki__Mike-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/TakaJoki_Mike/)
 [![Likedin Badge](https://img.shields.io/badge/-Mike_Smirnov-darkblue?style=flat&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/mike-smirnov-b531b6295/)
