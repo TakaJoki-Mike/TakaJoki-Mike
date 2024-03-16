@@ -67,17 +67,7 @@ As a result of the project, the following outcomes were achieved: All events wer
 `SoapUI`, `VS code`, `Git`, `Edge DevTools`, `pgAdmin`, `Mockoon`.
 
 
-### Contact Information
+### Contact Information:
 
-* [LinkedIn](https://www.linkedin.com/in/mike-smirnov-b531b6295/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
-* Telegram: @TakaJoki_Mike
-
-### Skills
-
-<p align="left">
-<a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode.svg" width="36" height="36" alt="VS Code" /></a><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" width="36" height="36" alt="HTML5" /></a><a href="https://www.postgresql.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg" width="36" height="36" alt="PostgreSQL" /></a>
-</p>
-
-### Socials
-
-<p align="left"> <a href="https://www.linkedin.com/in/mike-smirnov-b531b6295" target="_blank" rel="noreferrer"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin-dark.svg" /> <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" /> <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /> </picture> </a></p>
+[![Telegram Badge](https://img.shields.io/badge/-Mike_Smirnov-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/TakaJoki_Mike/)
+[![Likedin Badge](https://img.shields.io/badge/-Mike_Smirnov-darkblue?style=flat&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/mike-smirnov-b531b6295/)
