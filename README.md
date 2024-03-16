@@ -1,4 +1,4 @@
-## Hello there, you can view my TakaJoki-Mike here!
+## Hello there, you can view my portfolio here!
 
 ### Here are a few words about myself
 
